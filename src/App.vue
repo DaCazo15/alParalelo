@@ -48,6 +48,7 @@
     }
   }
   const mostrarResultado = () => {
+    if (cantidad.value === 0) return;
     calcularCantidad();
     contenedorResultado.value = true
   }
