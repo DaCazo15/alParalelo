@@ -10,7 +10,7 @@
     <div class="contenedor-cantidad">
         <label>Introduce un monto: </label>
         <input 
-            type="text" 
+            type="number"
             placeholder="Ej. 300"
             :value="`${cantidad > 0 ? cantidad : ''}`"
             @input="$emit('update:cantidad', $event.target.value)"
