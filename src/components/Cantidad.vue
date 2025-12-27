@@ -39,4 +39,16 @@
         border-radius: 1rem;
         outline: none;
     }
+    @media(max-width: 500px){
+        .contenedor-cantidad{
+            align-items: center;
+        }
+        .contenedor-cantidad label{
+            font-size: 1.2rem;
+        }
+        .contenedor-cantidad input{
+            width: 100%;
+            max-width: 100%;
+        }
+    }
 </style>

@@ -42,4 +42,12 @@
         text-transform: capitalize;
         color: var(--verde);
     }
+    @media(max-width: 500px){
+        .contenedor-resultado-calculado label{
+            font-size: 1.2rem;
+        }
+        .contenedor-resultado-calculado h2{
+            font-size: 1.2rem;
+        }
+    }
 </style>

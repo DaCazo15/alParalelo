@@ -8,23 +8,30 @@
 </script>
 
 <template>
-    <div class="contenedor-moneda">
-      <h2>Dolar Oficial</h2>
-      <label>${{ props.precioMoneda.oficial }}</label>
-    </div>
-    <div class="contenedor-moneda">
-      <h2>Dolar paralelo</h2>
-      <label>${{ props.precioMoneda.paralelo }}</label>
+    <div class="contenedor-tasa">
+        <div class="contenedor-moneda">
+          <h2>Dolar Oficial</h2>
+          <label>${{ props.precioMoneda.oficial }}</label>
+        </div>
+        <div class="contenedor-moneda">
+          <h2>Dolar paralelo</h2>
+          <label>${{ props.precioMoneda.paralelo }}</label>
+        </div>
     </div>
 </template>
 
 <style>
+    .contenedor-tasa{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        width: 100%;
+    }
     .contenedor-moneda{
         display: flex;
         flex-direction: column;
-        align-items: left;
-        margin-left: -11.2rem;
         font-family: var(--font);
+        width: auto;
     }
     .contenedor-moneda h2{
         margin-bottom: 10px;
@@ -36,5 +43,16 @@
         color: var(--blanco);
         font-size: 1.8rem;
         font-weight: 900;
+    }
+    @media(max-width: 500px){
+        .contenedor-tasa{
+            width: 100%;
+        }
+        .contenedor-moneda{
+            margin-left: 0;
+        }
+        .contenedor-moneda label{
+            font-size: 1.5rem;
+        }
     }
 </style>

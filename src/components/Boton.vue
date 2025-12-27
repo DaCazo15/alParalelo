@@ -10,7 +10,8 @@
         justify-content: center;
         align-items: center;
         background-color: var(--gris-oscuro);
-        width: 80%;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        width: auto;
         padding: 1rem;
         border-radius: 1rem;
         font-family: var(--font);

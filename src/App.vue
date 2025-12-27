@@ -115,7 +115,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    width: auto;
   }
 
   .titulo{
@@ -159,7 +159,7 @@
     align-items: center;
     flex-direction: row;
     gap: 1rem;
-    width: 80%;
+    width: 100%;
   }
   .btn-calcular{
     display: flex;
@@ -181,6 +181,23 @@
     padding: 2rem 3rem 2rem 4rem;
     border-radius: 1rem;
     gap: 1.5rem;
+    border-right: solid 1rem var(--verde);
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  @media(max-width: 500px){
+    .contenedor-principal{
+      flex-direction: column;
+    }
+    .contenedor {
+      padding: 2rem 3rem;
+    }
+    .contenedor-resultado{
+      padding: 2rem 3rem;
+      margin-left: 0;
+      margin-top: -1.5rem;
+      padding-bottom: -1.5rem;
+      border: none;
+      border-bottom: solid 1rem var(--verde);
+    }
   }
 </style>
