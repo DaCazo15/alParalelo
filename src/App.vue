@@ -61,8 +61,8 @@
 </script>
 
 <template>
-  <img src="./assets/alparalelo.png" alt="alParalelo">
-  <h1 class="titulo">Al Cambio</h1>
+  <img src="./assets/alparalelo.png" alt="alParalelo" class="logo">
+  <!-- <h1 class="titulo">Al Cambio</h1> -->
   <div class="contenedor-principal">
     <div class="contenedor">
       <div>
@@ -118,8 +118,13 @@
     align-items: center;
     width: auto;
   }
-
-  .titulo{
+  .logo{
+    display: block;
+    height: auto;
+    width: 200px;
+    margin: -1rem auto -2rem;
+  }
+  /* .titulo{
     margin-top: 1rem;
     margin-bottom: 1rem;
     display: flex;
@@ -129,7 +134,7 @@
     font-family: var(--font);
     color: var(--verde);
     font-size: 4rem;
-  }
+  } */
   .contenedor-principal{
     display: flex;
     justify-content: space-between;
