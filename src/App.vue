@@ -61,6 +61,7 @@
 </script>
 
 <template>
+  <img src="./assets/alparalelo.png" alt="alParalelo">
   <h1 class="titulo">Al Cambio</h1>
   <div class="contenedor-principal">
     <div class="contenedor">
